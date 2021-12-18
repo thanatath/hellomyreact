@@ -1,10 +1,14 @@
-import { Routes, Route, Link } from "react-router-dom";
+import {Link } from "react-router-dom";
 import React from 'react';
-import SearchManga from "../Components/SearchManga";
-export default class Navbar extends React.Component {
+import {useDispatch } from 'react-redux'
+import { update } from '../Store/Search.js'
 
 
-  render() {
+export default function Navbar()  {
+
+  const dispatch = useDispatch()
+   
+    
     return (
       <div><nav className="navbar mb-3 navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
@@ -28,7 +32,7 @@ export default class Navbar extends React.Component {
           
             <input id="SearchValue" className="form-control me-2"  type="search" placeholder="Search" aria-label="Search" />
             <Link style={{ textDecoration: 'none' }} to="Search">
-              <button onClick={test} className="btn btn-outline-success" id="searchBtn" type="submit">Search</button> 
+              <button onClick={()=>{dispatch(update(document.getElementById('SearchValue').value))}} className="btn btn-outline-success" id="searchBtn" type="submit">Search</button> 
             </Link>
           </form>
         </div>
@@ -36,11 +40,11 @@ export default class Navbar extends React.Component {
     </nav></div>
     );
     
-    }}
-
-    function test(){
-      localStorage.setItem("searchValue", document.getElementById("SearchValue").value);
-      
     }
+ 
+
+    
+
+ 
  
  

@@ -1,8 +1,8 @@
-import './App.css';
-import { Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Search from './Pages/Search.js';
 import Navbar from './Components/Navbar.js';
 import EntityManga from './Components/EntityManga';
+ 
 
 function App() {
   return (

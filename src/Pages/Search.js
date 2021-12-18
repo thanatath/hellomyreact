@@ -1,6 +1,5 @@
 import React from 'react';
 import Searchmanga from '../Components/SearchManga.js';
-import { useParams } from 'react-router-dom';
  
 
 export default class Search extends React.Component {
