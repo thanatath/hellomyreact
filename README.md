@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# Getting Started with My First React App : Manga Man
+
+<img src="Screenshot_1.jpg">
+<img src="Screenshot_2.jpg">
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
