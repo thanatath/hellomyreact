@@ -4,13 +4,11 @@ const SearchManga = () => {
   const searchValue = useSelector((state) => state.value);
   const [manga, setmanga] = useState({});
   const [loaded, setloaded] = useState(false);
-  const [search, setsearch] = useState(searchValue);
 
   useEffect(() => {
-    setsearch(searchValue);
     async function fetchData() {
       const res = await fetch(
-        'https://kitsu.io/api/edge/anime?filter[text]=' + search
+        'https://kitsu.io/api/edge/anime?filter[text]=' + searchValue
       );
       res.json().then((res) => {
         setmanga(res.data);
