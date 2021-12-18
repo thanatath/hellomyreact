@@ -33,7 +33,7 @@ function Index(){
     </div>
     <div className="row justify-content-center">
       <div className='col-12'>
-      <img src="https://image.shutterstock.com/image-vector/japanese-slogan-manga-face-translation-260nw-1841050144.jpg" className="img-fluidr w-100"/>
+      <img src="https://i.redd.it/r8838hj31j6z.png" className=" rounded img-fluidr w-100"/>
       </div>
     </div>
     <ListManga/>

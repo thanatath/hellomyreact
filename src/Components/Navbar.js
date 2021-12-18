@@ -32,7 +32,7 @@ export default function Navbar()  {
           
             <input id="SearchValue" className="form-control me-2"  type="search" placeholder="Search" aria-label="Search" />
             <Link style={{ textDecoration: 'none' }} to="Search">
-              <button onClick={()=>{dispatch(update(document.getElementById('SearchValue').value))}} className="btn btn-outline-success" id="searchBtn" type="submit">Search</button> 
+              <button onClick={()=>{dispatch(update(document.getElementById('SearchValue').value))}} className="btn" id="searchBtn" type="submit">Search</button> 
             </Link>
           </form>
         </div>
