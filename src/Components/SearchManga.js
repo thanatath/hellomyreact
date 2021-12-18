@@ -41,6 +41,8 @@ const SearchManga = () => {
                     {manga.attributes.startDate}
                   </small>
                 </p>
+                             <button onClick={()=>{alert(manga.id)}} className='btn btn-primary'>View</button>
+          
               </div>
             </div>
           </div>

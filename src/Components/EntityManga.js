@@ -15,6 +15,8 @@ export default class EntityManga extends React.Component {
       });
   }
 
+
+
   render() {
     return (
       <>
@@ -23,9 +25,7 @@ export default class EntityManga extends React.Component {
             <img className='card-img-top' src={manga.attributes.posterImage.large} alt='Card image cap' />
             <div className='card-body'>
               <h5 className='card-title'>{manga.attributes.titles.en_jp || manga.attributes.titles.en}</h5>
-              <a href='#' className='btn btn-primary'>
-                View
-              </a>
+             <button onClick={()=>{alert(manga.id)}} className='btn btn-primary'>View</button>
             </div>
           </div>
         ))}
