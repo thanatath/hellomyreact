@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 const SearchManga = () => {
-  const searchValue = useSelector((state) => state.value);
+  const searchValue = useSelector((state) => state.valueSearch);
   const [manga, setmanga] = useState({});
   const [loaded, setloaded] = useState(false);
 

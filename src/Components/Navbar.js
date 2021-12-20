@@ -1,7 +1,7 @@
 import {Link } from "react-router-dom";
 import React from 'react';
 import {useDispatch } from 'react-redux'
-import { update } from '../Store/Search.js'
+import { updateSearch } from '../Store/Search.js'
 
 
 export default function Navbar()  {
@@ -32,7 +32,7 @@ export default function Navbar()  {
           
             <input id="SearchValue" className="form-control me-2"  type="search" placeholder="Search" aria-label="Search" />
             <Link style={{ textDecoration: 'none' }} to="Search">
-              <button onClick={()=>{dispatch(update(document.getElementById('SearchValue').value))}} className="btn" id="searchBtn" type="submit">Search</button> 
+              <button onClick={()=>{dispatch(updateSearch(document.getElementById('SearchValue').value))}} className="btn" id="searchBtn" type="submit">Search</button> 
             </Link>
           </form>
         </div>
